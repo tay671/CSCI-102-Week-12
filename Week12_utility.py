@@ -42,3 +42,7 @@ def ScoreFinder(listofplayers, listofscores, name):
     score = listofscores[place]
     PrintOutput(f'{listofplayers[place]} got a score of {score}')
 
+def Union(list1,list2):
+    finallist = list1 + list2
+    return list(dict.fromkeys(finallist))
+
