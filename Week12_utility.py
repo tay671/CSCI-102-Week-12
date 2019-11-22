@@ -24,3 +24,11 @@ def UpdateString(string,new,location):
         else:
             newstring += string[i]
     PrintOutput(newstring)
+
+def FindWordCount(filename,word):
+    count=0
+    for i in range(len(filename)):
+        for j in filename[i].split():
+            if j == word:
+                count=count+1
+    return count
