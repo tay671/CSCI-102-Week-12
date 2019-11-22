@@ -46,3 +46,10 @@ def Union(list1,list2):
     finallist = list1 + list2
     return list(dict.fromkeys(finallist))
 
+def Intersection(list1,list2):
+    bothlist = []
+    for i in list1:
+        if i in list2:
+            bothlist.append(i)
+    return bothlist
+
