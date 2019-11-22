@@ -32,3 +32,13 @@ def FindWordCount(filename,word):
             if j == word:
                 count=count+1
     return count
+
+def ScoreFinder(listofplayers, listofscores, name):
+    fixedname = name.capitalize()
+    if fixedname not in listofplayers:
+        PrintOutput(f'player not found')
+        return
+    place = listofplayers.index(fixedname)
+    score = listofscores[place]
+    PrintOutput(f'{listofplayers[place]} got a score of {score}')
+
