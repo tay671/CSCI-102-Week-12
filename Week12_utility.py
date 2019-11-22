@@ -14,3 +14,13 @@ def LoadFile(filename):
     for i in List:
         sublist.append(i[0:-1])
     return sublist
+
+def UpdateString(string,new,location):
+    newstring = ''
+    for i in range(len(string
+                       )):
+        if i == location:
+            newstring += new
+        else:
+            newstring += string[i]
+    PrintOutput(newstring)
